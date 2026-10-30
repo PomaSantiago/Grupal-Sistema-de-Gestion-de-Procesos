@@ -36,6 +36,6 @@ El estado se guarda en `estado.txt`, en la misma carpeta del ejecutable.
 ## Estado del proyecto
 
 - [x] Documento de diseno (Semana 1)
-- [x] Estructuras basicas (Semana 2)
+- [ ] Estructuras basicas (Semana 2)
 - [ ] Funcionalidades completas y pruebas (Semana 3)
 - [ ] Manual de usuario
