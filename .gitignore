@@ -1,0 +1,5 @@
+*.exe
+*.o
+*.layout
+*.dev
+estado.txt
