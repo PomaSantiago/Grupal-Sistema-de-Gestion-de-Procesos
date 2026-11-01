@@ -1,4 +1,3 @@
-// cola_cpu.h - Cola de prioridad enlazada: Planificador de CPU (Alumno B)
 #ifndef COLA_CPU_H
 #define COLA_CPU_H
 
@@ -27,7 +26,6 @@ bool colaVacia(const Cola &c) {
     return c.frente == NULL;
 }
 
-// Inserta ordenado por prioridad; a igual prioridad respeta el orden de llegada
 void encolar(Cola &c, int idProceso, const char *nombre, int prioridad) {
     NodoCola *nuevo = new NodoCola;
     nuevo->idProceso = idProceso;
@@ -54,7 +52,6 @@ void encolar(Cola &c, int idProceso, const char *nombre, int prioridad) {
     }
 }
 
-// Saca el primero de la cola y guarda sus datos en "ejecutado"
 bool desencolar(Cola &c, NodoCola &ejecutado) {
     if (c.frente == NULL) {
         cout << "No hay procesos en cola." << endl;
@@ -81,7 +78,6 @@ NodoCola* buscarEnCola(const Cola &c, int idProceso) {
     return NULL;
 }
 
-// Cuenta cuantos procesos faltan por atender. O(n)
 int contarCola(const Cola &c) {
     int n = 0;
     NodoCola *aux = c.frente;
@@ -92,7 +88,6 @@ int contarCola(const Cola &c) {
     return n;
 }
 
-// Muestra el siguiente proceso, toda la cola y cuantos faltan por atender
 void mostrarCola(const Cola &c) {
     if (c.frente == NULL) {
         cout << "No hay procesos por atender." << endl;
