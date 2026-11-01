@@ -1,3 +1,4 @@
+// menu_cpu_memoria.h - Submenus del planificador de CPU y del gestor de memoria (Alumno B)
 #ifndef MENU_CPU_MEMORIA_H
 #define MENU_CPU_MEMORIA_H
 
