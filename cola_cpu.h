@@ -8,7 +8,7 @@ using namespace std;
 struct NodoCola {
     int idProceso;
     char nombre[30];
-    int prioridad;      // 1 = mas alta, va primero
+    int prioridad;     
     NodoCola *siguiente;
 };
 
